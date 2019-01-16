@@ -1,0 +1,57 @@
+<div id="header" class="nav-collapse">
+        <div class="row clearfix">
+            <div class="col-1">
+  
+                <!--Logo-->
+                <div id="logo">
+  
+                    <!--Logo that is shown on the banner-->
+                    <img src="../assets/images/logo.png" id="banner-logo" alt="Landing Page"/>
+                    <!--End of Banner Logo-->
+  
+                    <!--The Logo that is shown on the sticky Navigation Bar-->
+                    <img src="../assets/images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                    <!--End of Navigation Logo-->
+  
+                </div>
+                <!--End of Logo-->
+                <app-social></app-social>
+  
+                 <!--Main Navigation-->
+   <nav id="nav-main">
+          <ul>
+              <!-- RouterLink دى عشان اعمل لينك انى لما ادوس على دى يروح للراوت بتعها اللى انا محدده-->
+              <li>
+                <a routerLink="/Home"  (click)="getClick('Home')" [class.active]="activetab==='Home'">Home</a>
+              </li>
+              <li> 
+                <a routerLink="/About"  (click)="getClick('About')" [class.active]="activetab==='About'">About</a>
+              </li>
+              <li>
+                <a routerLink="/Gallery"  (click)="getClick('Gallery')" [class.active]="activetab==='Gallery'">Gallery</a>
+              </li>
+              <li>
+                <a routerLink="/Services" (click)="getClick('Services')" [class.active]="activetab==='Services'">Services</a>
+              </li>
+              <li>
+                <a routerLink="/Testomonial" (click)="getClick('Testomonial')" [class.active]="activetab==='Testomonial'">Testimonials</a>
+              </li>
+              <li>
+                <a routerLink="/Clients" (click)="getClick('Clients')" [class.active]="activetab==='Clients'">Clients</a>
+              </li>
+              <li>
+                <a routerLink="/Pricing"  (click)="getClick('Pricing')" [class.active]="activetab==='Pricing'">Pricing</a>
+              </li>
+          </ul>
+        </nav>
+        <!--End of Main Navigation-->
+        
+               
+               
+  
+                <div id="nav-trigger"><span></span></div>
+                <nav id="nav-mobile"></nav>
+  
+            </div>
+        </div>
+    </div><!--End of Header-->
